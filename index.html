@@ -8,7 +8,31 @@
     <title>Document</title>
   </head>
   <body>
-    <div>
+    <!-- navbar -->
+    <nav>
+      <section class="navbar-bottom"></section>
+      <section class="navbar-top">
+        <section class="navbar-left">
+          <img src="./assets/logos/logo_yard_sale.svg" alt="logo" />
+          <ul>
+            <li><a href=""></a>All</li>
+            <li><a href=""></a>Clothes</li>
+            <li><a href=""></a>Electronics</li>
+            <li><a href=""></a>Furnitures</li>
+            <li><a href=""></a>Toys</li>
+            <li><a href=""></a>Others</li>
+          </ul>
+        </section>
+        <section class="navbar-right">
+          <div>mikesystem@hotmail.com</div>
+          <div class="navbar-shopping-car">
+            <img src="./assets/logos/bt_added_to_cart.svg" alt="" />
+          </div>
+        </section>
+      </section>
+    </nav>
+
+    <div class="section-new-password">
       <div class="login">
         <div class="form-container">
           <img src="./assets/logos/logo_yard_sale.svg" class="logo" />
@@ -16,7 +40,7 @@
           <h1 class="title">Create a new password</h1>
           <p class="subtitle">Enter a new password for your account</p>
 
-          <form action="/" class="form">
+          <form action="/" class="form" id="myForm">
             <label for="password" class="label">Password</label>
             <input
               type="password"
@@ -25,22 +49,57 @@
               class="input input-password"
             />
 
-            <label for="new-password" class="label">Password</label>
+            <label for="new-password" class="label">New Password</label>
             <input
               type="password"
-              id="new-password"
+              id="new_password"
               placeholder="*********"
               class="input input-password"
             />
 
             <input
+              type="text"
+              placeholder="Only numbers"
+              class="input input-numbers"
+              id="numbers"
+              pattern="^[0-9]+$"
+            />
+            <input
               type="submit"
               value="Confirm"
               class="primary-button login-button"
             />
+            <input type="button" value="Sing Up" class="sing-up" />
+            <a href="/">I forgot my password</a>
           </form>
+        </div>
+        <div class="image-email">
+          <img src="./assets/logos/email.svg" alt="email" />
+        </div>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>The Table Header</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Content 1</td>
+                <td>Content 1</td>
+                <td>Content 1</td>
+              </tr>
+              <tr>
+                <td>Content 1</td>
+                <td>Content 1</td>
+                <td>Content 1</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
+
+    <script src="/index.js"></script>
   </body>
 </html>
